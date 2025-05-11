@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shruti Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <h1 class="name">Shruti Ghule</h1>
+    <p class="domain">Web Developer</p>
+    <nav>
+      <a href="#hero">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    
+    <div class="hero-text slide-left">
+      <h2 class="shru">Hi, I'm Shruti Ghule 👋</h2>
+      <br>
+      <h2>Web Developer</h2>
+      <p>
+        "I am passionate about creating user-friendly websites with a strong focus on clean design, functionality, and optimal performance. I am always eager to stay updated with the latest trends and technologies."
+      </p>
+      <a href="assets/Shruti_Ghule_CV.pdf" class="btn">Download Resume</a>
+      <div class="contact-info">
+        <p><strong><i class="fas fa-phone-alt"></i> 📱 Mobile :</strong> +91 8356077430</p>
+        <p><strong><i class="fas fa-envelope"></i> 📧 Email :</strong> shrutighule555@gmail.com</p>
+        <p><strong><i class="fas fa-map-marker-alt"></i> 📍 Location :</strong> Mumbai, Maharashtra, India</p>
+      </div>
+    </div>
+    <div class="hero-img slide-right">
+      <img src="assets/me.jpg" alt="Shruti Ghule">
+    </div>
+  </section>
+
+ <!-- Skills Section -->
+<section id="skills" class="skills">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card zoom-in">
+      <p>HTML</p>
+      <div class="stars">⭐⭐⭐⭐</div>
+      <div class="bar"><span style="width: 80%"></span></div>
+    </div>
+    <div class="skill-card zoom-in">
+      <p>CSS</p>
+      <div class="stars">⭐⭐⭐⭐</div>
+      <div class="bar"><span style="width: 70%"></span></div>
+    </div>
+    <div class="skill-card zoom-in">
+      <p>JavaScript</p>
+      <div class="stars">⭐⭐⭐</div>
+      <div class="bar"><span style="width: 60%"></span></div>
+    </div>
+    <div class="skill-card zoom-in">
+      <p>React.js</p>
+      <div class="stars">⭐⭐⭐</div>
+      <div class="bar"><span style="width: 50%"></span></div>
+    </div>
+    <div class="skill-card zoom-in">
+      <p>WordPress</p>
+      <div class="stars">⭐⭐⭐⭐</div>
+      <div class="bar"><span style="width: 85%"></span></div>
+    </div>
+    <div class="skill-card zoom-in">
+      <p>API Integration</p>
+      <div class="stars">⭐⭐⭐</div>
+      <div class="bar"><span style="width: 65%"></span></div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="center-heading">
+      <h2>My Projects</h2>
+    </div>
+    <div class="project-gallery">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3 class="project-title">Tunemix</h3>
+          <p class="project-description">
+           A responsive audio player with play, pause, next, and previous controls built using HTML, CSS, and JavaScript
+          <div class="project-buttons">
+            <a href="https://shrutighule15.github.io/TuneMix/" class="btn" target="_blank">🔗 View Project Link</a>
+        
+        <button onclick="openGallery([
+          'assets/images/tunemix.png'
+         ])">🖼️ View Screenshot</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3 class="project-title">Amazon Clone</h3>
+          <p class="project-description">
+            An Amazon Clone with React front-end, secure payment integration, and a back-end built with Express.js, Node.js, and MongoDB
+          </p>
+          <div class="project-buttons">
+            <a href="https://github.com/shrutighule15" class="btn" target="_blank">🔗 View Project Link</a>
+            <button onclick="openGallery([
+          'assets/images/amazon1.png',
+          'assets/images/amazon2.png',
+          'assets/images/amazon3.png',
+          'assets/images/amazon4.png',
+          'assets/images/amazon5.png',
+          'assets/images/amazon6.png',
+          'assets/images/amazon7.png'
+         ])">🖼️ View Screenshot</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3 class="project-title">Employee Management System</h3>
+          <p class="project-description">
+            A task management system with role-based access and secure authentication, built using React, Context API & Local Storage
+          </p>
+          <div class="project-buttons">
+            <a href="https://github.com/shrutighule15/Employee-Management-System-EMS-" class="btn" target="_blank">🔗 View Project Link</a>
+            <button onclick="openGallery([
+          'assets/images/ems1.png',
+          'assets/images/ems2.png',
+          'assets/images/ems3.png'
+         ])">🖼️ View Screenshot</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3 class="project-title">Weather Tracker</h3>
+          <p class="project-description">
+            Built with React.js and Axios to fetch and display real-time weather details using the Weatherstack API
+          </p>
+          <div class="project-buttons">
+            <a href="https://github.com/shrutighule15/Weather-Tracker" class="btn" target="_blank">🔗 View Project Link</a>
+
+           <button onclick="openGallery([
+          'assets/images/api1.png',
+          'assets/images/api2.png'
+         ])">🖼️ View Screenshot</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+ 
+  <form action="https://formspree.io/f/xkgrzdva" method="POST" class="contact-form" id="myForm">
+  <div class="input-group">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+  </div>
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+  <button type="submit" class="btn-submit">Send Message</button>
+</form>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 Shruti Ghule</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/shruti-ghule-4b077a270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i>LinkedIN</a>
+<span>|</span>
+      <a href="https://github.com/shrutighule15">Git Hub<i class="fab fa-github"></i></a>
+
+    </div>
+  </div>
+</footer>
+
+<!-- Screenshot Gallery Modal -->
+<div id="galleryModal" class="modal">
+  <span class="close" onclick="closeGallery()">&times;</span>
+  <img id="galleryImage" class="modal-content">
+  <div class="modal-nav">
+    <span class="prev" onclick="prevImage()">&#10094;</span>
+    <span class="next" onclick="nextImage()">&#10095;</span>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
