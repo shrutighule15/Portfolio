@@ -29,7 +29,7 @@ function nextImage() {
 }
 
 //contact me
-document.getElementById("contact-form").addEventListener("submit", function (e) {
+document.getElementById("myForm").addEventListener("submit", function (e) {
   e.preventDefault(); // Prevent default submission
 
   // Get form field values
@@ -90,16 +90,16 @@ function isInViewport(element) {
     return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
 }
 
-// Apply animation when section is in view
-function applyAnimationOnScroll() {
-    const sections = document.querySelectorAll('.section'); // Replace with your section class or id
-    sections.forEach((section) => {
-        if (isInViewport(section) && !section.classList.contains('animated')) {
-            section.classList.add('animated'); // Add class to trigger animation
-            section.classList.add('fadeDown'); // Example: Apply a fadeDown class (add your animation)
-        }
-    });
-}
+// // Apply animation when section is in view
+// function applyAnimationOnScroll() {
+//     const sections = document.querySelectorAll('.section'); // Replace with your section class or id
+//     sections.forEach((section) => {
+//         if (isInViewport(section) && !section.classList.contains('animated')) {
+//             section.classList.add('animated'); // Add class to trigger animation
+//             section.classList.add('fadeDown'); // Example: Apply a fadeDown class (add your animation)
+//         }
+//     });
+// }
 
 // Listen for scroll events to check if any section is in view
 window.addEventListener('scroll', applyAnimationOnScroll);
